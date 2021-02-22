@@ -2,7 +2,6 @@ package o3_innerClasses;
 
 public class O1_Outer {
 
-
     private String greeting = "Hi";
 
     public static void main(String[] args) {

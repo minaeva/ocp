@@ -1,6 +1,6 @@
 package o4_interfaces;
 
-public class MammalClass implements O1_Mammal, O2_Mammal {
+public class O0_MammalClass implements O1_Mammal, O2_Mammal {
 
 
     @Override

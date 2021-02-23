@@ -5,7 +5,7 @@ public enum SeasonWithConstructor {
 
     private final String months;
 
-    private SeasonWithConstructor(String months) {
+    SeasonWithConstructor(String months) {
         this.months = months;
     }
 

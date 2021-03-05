@@ -12,7 +12,10 @@ public class O2_PredicateAnimal {
         animals.add(new O1_Animal("kangaroo", true, true));
         animals.add(new O1_Animal("rabbit", true, false));
         animals.add(new O1_Animal("turtle", false, true));
-        print(animals, a -> a.canHop());
+//        print(animals, a -> a.canHop());
+
+        test(5, a -> a > 5);
+        test(5, a -> a > 4);
     }
 
     // Pass lambda that does check print(animals, a -> a.canHop());
@@ -23,6 +26,14 @@ public class O2_PredicateAnimal {
                 System.out.print(animal + " ");
             }
 
+        }
+    }
+
+    private static void test(int i, Predicate<Integer> check) {
+        if (check.test(i)) {
+            System.out.println(i + " yes");
+        } else {
+            System.out.println(i + " not");
         }
     }
 }

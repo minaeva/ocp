@@ -16,6 +16,10 @@ public class O2_PredicateAnimal {
 
         test(5, a -> a > 5);
         test(5, a -> a > 4);
+        print(animals, a -> a.canHop());
+        print(animals, a -> !a.canHop());
+        print(animals, (O1_Animal a) -> { return !a.canHop();});
+        print(animals, (var a) -> { return !a.canHop();});
     }
 
     // Pass lambda that does check print(animals, a -> a.canHop());

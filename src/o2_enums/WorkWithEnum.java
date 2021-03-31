@@ -3,13 +3,21 @@ package o2_enums;
 public class WorkWithEnum {
 
     public static void main(String[] args) {
+
+        SeasonWithConstructor[] seasons = SeasonWithConstructor.values();
+        System.out.println(seasons[0] + " " + seasons[1]);
+
+        SeasonWithConstructor season = SeasonWithConstructor.valueOf("WINTER");
+        season.printMonths();
+        season.setMonths("new months");
+        season.printMonths();
 //        workWithSimpleEnum();
 
 //        workWithEnumWithConstructor();
 
 //        constructorRunsOnce();
 
-        workWithDefaultMethod();
+//        workWithDefaultMethod();
     }
 
     private static void workWithSimpleEnum() {

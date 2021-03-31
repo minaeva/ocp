@@ -3,6 +3,8 @@ package o2_enums;
 public class EnumInSwitch {
 
     public static void main(String[] args) {
+
+        Season.values();
         Season season = Season.SUMMER;
 
         switch (season) {

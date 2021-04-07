@@ -12,7 +12,6 @@ public class O2_PredicateAnimal {
         animals.add(new O1_Animal("kangaroo", true, true));
         animals.add(new O1_Animal("rabbit", true, false));
         animals.add(new O1_Animal("turtle", false, true));
-//        print(animals, a -> a.canHop());
 
         test(5, a -> a > 5);
         test(5, a -> a > 4);

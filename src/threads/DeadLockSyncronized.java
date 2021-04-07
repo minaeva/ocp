@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Deadlock {
+public class DeadLockSyncronized {
     public static void main(String[] args) throws InterruptedException {
         Runner1 runner = new Runner1();
 
@@ -21,50 +21,19 @@ public class Deadlock {
     }
 }
 
-class Runner {
+class Runner1 {
 
     private AccountSync account1 = new AccountSync();
     private AccountSync account2 = new AccountSync();
-
-    private Lock lock1 = new ReentrantLock();
-    private Lock lock2 = new ReentrantLock();
-
-    private void takeLocks(Lock lock1, Lock lock2) {
-        boolean firstLockTaken = false;
-        boolean secondLockTaken = false;
-        while (true) {
-            try {
-                firstLockTaken = lock1.tryLock();
-                secondLockTaken = lock2.tryLock();
-            } finally {
-                if (firstLockTaken && secondLockTaken) {
-                    return;
-                }
-                if (firstLockTaken) {
-                    lock1.unlock();
-                }
-                if (secondLockTaken) {
-                    lock2.unlock();
-                }
-            }
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 
     public void firstThread() {
         Random random = new Random();
 
         for (int i = 0; i < 1000; i++) {
-            takeLocks(lock1, lock2);
-            try {
-                AccountSync.transfer(account1, account2, random.nextInt(100));
-            } finally {
-                lock1.unlock();
-                lock2.unlock();
+            synchronized (account1) {
+                synchronized (account2) {
+                    AccountSync.transfer(account1, account2, random.nextInt(100));
+                }
             }
         }
     }
@@ -73,12 +42,10 @@ class Runner {
         Random random = new Random();
 
         for (int i = 0; i < 1000; i++) {
-            takeLocks(lock2, lock1);
-            try {
-                AccountSync.transfer(account2, account1, random.nextInt(100));
-            } finally {
-                lock1.unlock();
-                lock2.unlock();
+            synchronized (account2) {
+                synchronized (account1) {
+                    AccountSync.transfer(account2, account1, random.nextInt(100));
+                }
             }
         }
     }
@@ -90,7 +57,7 @@ class Runner {
     }
 }
 
-class Account {
+class AccountSync {
     private int balance = 10000;
 
     public static void transfer(AccountSync account1, AccountSync account2, int amount) {

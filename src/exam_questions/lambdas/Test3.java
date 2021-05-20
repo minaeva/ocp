@@ -8,7 +8,7 @@ public class Test3 {
         ToIntFunction<String> func = text::indexOf;
         System.out.println(func.applyAsInt("a")); //1
     }
-    //'text::indexOf' is equivalent to lambda expression 'search -> text.indexOf
+    //'text::indexOf' is equivalent to exam_questions.lambdas.lambda expression 'search -> text.indexOf
     // (search)'.
     //
     //ToIntFunction<T> has method: int applyAsInt(T value);.

@@ -35,7 +35,7 @@ public class Test2 {
     //Keyword this within anonymous inner class code refers to the instance of
     // anonymous inner class itself, so this.i in anonymous inner class code is 200.
     //
-    //Whereas, keyword this within lambda expression refers to the instance of
-    // enclosing class where lambda expression is written, so this.i in lambda
+    //Whereas, keyword this within exam_questions.lambdas.lambda expression refers to the instance of
+    // enclosing class where exam_questions.lambdas.lambda expression is written, so this.i in exam_questions.lambdas.lambda
     // expression is 100.
 }

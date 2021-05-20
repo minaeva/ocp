@@ -9,7 +9,9 @@ public class Test6 {
         map.put(1, "one");
         map.put(2, "two");
         map.put(3, "three");
-//        map.put(null, "null"); //-> NPE
+        //        map.put(null, "null"); //-> NPE
+        //TreeMap cannot contain null keys.
+
         map.forEach((key, value) -> System.out.println("{" + key + ": " + value + "}"));
     }
 }

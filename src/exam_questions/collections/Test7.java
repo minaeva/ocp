@@ -35,4 +35,8 @@ public class Test7 {
     //{Yusuf, Pathan}
     //{Tom, Hanks}
     //{Tom, Riddle}
+    //Comparator.comparing(Person::getFirstName).reversed()
+    // .thenComparing(Person::getLastName) =>
+    // Returns a Comparator for sorting the records in descending order
+    // of first name and in case first name matches, then ascending order of last name.
 }

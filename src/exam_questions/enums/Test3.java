@@ -20,7 +20,18 @@ abstract class Shape {
 
 public class Test3 {
     public static void main(String[] args) {
-//        Shape shape = new Shape() {//compile error
+        /*Shape shape3 = new Shape() {//compile error
+            @Override
+            void draw() {
+
+            }
+        };*/
+        Shape shape1 = new Shape(null) {
+            @Override
+            void draw() {
+
+            }
+        };
         Shape shape = new Shape(ShapeType.CIRCLE) {
             @Override
             void draw() {

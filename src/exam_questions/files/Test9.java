@@ -35,7 +35,7 @@ public class Test9 {
         // .\Parent\Child\Message.txt'.
         //
         //Files class has methods such as newInputStream(...), newOutputStream(...),
-        // newBufferedReader(...) and newBufferedWriter(...) for files reading and
+        // newBufferedReader(...) and newBufferedWriter(...) for exam_questions.files.files reading and
         // writing.
         //
         //Give code doesn't cause any compilation error.

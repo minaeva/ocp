@@ -21,13 +21,13 @@ public class Test7 {
 
         //following syntax is used: Files.find(root, 2, predicate).
         //
-        //root refers to 'F:' and maxDepth is 2. This means look out for all the files
-        // under F: (depth 1) and all the files under the directories whose immediate
+        //root refers to 'F:' and maxDepth is 2. This means look out for all the exam_questions.files.files
+        // under F: (depth 1) and all the exam_questions.files.files under the directories whose immediate
         // parent is F: (depth 2).
         //
         //
         //
-        //So in this case, F: and Parent directory are searched for the matching files.
+        //So in this case, F: and Parent directory are searched for the matching exam_questions.files.files.
         // 'F:Parent\a.txt' and 'F:Parent\b.txt' are printed on to the console.
     }
 }

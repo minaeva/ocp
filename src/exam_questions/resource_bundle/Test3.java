@@ -23,7 +23,7 @@ public class Test3 {
 //        What will be the result of compiling and executing Test class?
 
 
-//Files.list(Path) returns the object of Stream<Path> containing all the paths (files
+//Files.list(Path) returns the object of Stream<Path> containing all the paths (exam_questions.files.files
 // and directories) of current directory. It is not recursive.
 //
 //For recursive access use overloaded Files.walk() methods.

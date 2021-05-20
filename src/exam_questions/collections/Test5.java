@@ -31,8 +31,11 @@ public class Test5 {
                 "Udayan Khattry", 14.99));
         books.stream()
                 .collect(Collectors.groupingBy(Book::getAuthor))
-                .forEach((a, b) -> System.out.println(a + " " + b));
+                .forEach((a, b) -> System.out.println(a));
+        //Kathy Sierra
+        //Udayan Khattry
 
+        // .forEach((a, b) -> System.out.println(a + " " + b));
         //Kathy Sierra [{Head First Java,Kathy Sierra,24.5}]
         //Udayan Khattry [{OCP,Udayan Khattry,20.99}, {OCA,Udayan Khattry,14.99}]
     }

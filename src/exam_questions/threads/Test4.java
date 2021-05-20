@@ -48,7 +48,7 @@ public class Test4 {
 //        will print 'Match is starting...'on to the console and will successfully
 //        terminate the program?
 
-//'new CyclicBarrier(2, match);' means 2 threads must call await() so that Cyclic
+//'new CyclicBarrier(2, match);' means 2 exam_questions.threads.threads must call await() so that Cyclic
 // Barrier is tripped and barrier action is executed, this means run() method of thread
 // referred by match is invoked and this will print expected output on to the console.
 //

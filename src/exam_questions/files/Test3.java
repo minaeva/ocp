@@ -52,6 +52,6 @@ public class Test3 {
                 }
             }
         }
-        //all .pdf files will be deleted
+        //all .pdf exam_questions.files.files will be deleted
     }
 }

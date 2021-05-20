@@ -21,7 +21,7 @@ public class O2_PredicateAnimal {
         print(animals, (var a) -> { return !a.canHop();});
     }
 
-    // Pass lambda that does check print(animals, a -> a.canHop());
+    // Pass exam_questions.lambdas.lambda that does check print(animals, a -> a.canHop());
     private static void print(List<O1_Animal> animals, Predicate<O1_Animal> checker) {
         for (O1_Animal animal : animals) {
 

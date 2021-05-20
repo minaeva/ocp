@@ -26,7 +26,7 @@ public class Test5 {
         System.out.println(then - now);
         es.shutdown();
 
-        //There is a fixed thread pool of 10 threads, this means 10 threads can run in
+        //There is a fixed thread pool of 10 exam_questions.threads.threads, this means 10 exam_questions.threads.threads can run in
         // parallel.
         //
         //invokeAll() method causes the current thread (main) to wait, until all the

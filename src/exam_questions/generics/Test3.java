@@ -12,7 +12,7 @@ public class Test3 {
     public static void main(String[] args) {
         Printer2<Integer> obj = new Printer2<>(100);
         System.out.println(obj);
-        //exam_questions.generics.Printer2@6b71769e
+        //exam_questions.exam_questions.generics.generics.Printer2@6b71769e
 
         //Printer class doesn't override toString() method and hence 'System.out.println(obj);' prints some text containing @ symbol.
     }

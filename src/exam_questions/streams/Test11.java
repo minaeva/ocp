@@ -15,6 +15,6 @@ public class Test11 {
 
     //filter method filters all the strings ending with "d".
     //
-    //'stream.reduce((s1, s2) -> s1 + s2)' returns 'Optional<String>' type, whereas
-    // 'stream.reduce("", (s1, s2) -> s1 + s2)' returns 'String'.
+    //'exam_questions.streams.stream.reduce((s1, s2) -> s1 + s2)' returns 'Optional<String>' type, whereas
+    // 'exam_questions.streams.stream.reduce("", (s1, s2) -> s1 + s2)' returns 'String'.
 }

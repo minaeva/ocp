@@ -31,7 +31,7 @@ public class Test3 {
         //
         //
         //
-        //But execution of threads depend on OS/JVM implementation, hence order of
+        //But execution of exam_questions.threads.threads depend on OS/JVM implementation, hence order of
         // output can be different.
     }
 }

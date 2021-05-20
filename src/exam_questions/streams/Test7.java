@@ -18,7 +18,7 @@ public class Test7 {
 
         //findFirst() is terminal operation.
         //
-        //list.stream() => [-80, 100, -40, 25, 200].
+        //list.exam_questions.streams.stream() => [-80, 100, -40, 25, 200].
         //
         //filter(predicate) is executed for each element until just one element passes
         // the test. Because findFirst() will terminate the operation on finding first

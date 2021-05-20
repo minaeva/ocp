@@ -17,7 +17,7 @@ public class Test1 {
         es.shutdown();
     }
 
-    //'es.submit(new Printer());' is asynchronous call, hence 2 threads(main and thread
+    //'es.submit(new Printer());' is asynchronous call, hence 2 exam_questions.threads.threads(main and thread
     // from pool) always run in asynchronous mode.
     //
     //Thread execution depends upon underlying OS/JVM's thread scheduling mechanism.

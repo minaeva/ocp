@@ -20,6 +20,7 @@ public class GenericsDemo {
         List<? extends Number> nums = Arrays.asList(1, 2.0, 3L);
         List<Integer> ints = new ArrayList<>();
         nums = ints;
+//        nums.
 
     }
 }

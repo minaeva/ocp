@@ -1,5 +1,8 @@
 package exam_questions.generics;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Animal {
 }
 
@@ -11,6 +14,16 @@ class Cat extends Animal {
 
 class A<T> {
     T t;
+    static String s;
+
+    static <T> void walk(T t) {}
+
+    static <T> void jump(T t) {}
+
+    List<T> run(T t){
+//        return new T();
+        return new ArrayList<T>();
+    }
 
     void set(T t) {
         this.t = t;

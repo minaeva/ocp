@@ -1,5 +1,7 @@
 package exam_questions.enums;
 
+import java.awt.*;
+
 enum Flags {
     TRUE, FALSE;
 
@@ -11,6 +13,8 @@ enum Flags {
 public class Test2 {
     public static void main(String[] args) {
 //        Flags flags = new Flags();
+
+        Desktop desktop = Desktop.getDesktop();
     }
 
     //compilation error

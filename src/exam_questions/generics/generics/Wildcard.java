@@ -7,7 +7,7 @@ public class Wildcard {
 
     public static void main(String[] args) {
 //        List<Number> list = new ArrayList<Integer>();
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
         list.add(123);
         list.add(123);
         list.add(123);
